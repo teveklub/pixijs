@@ -1133,7 +1133,7 @@ export class InteractionManager extends EventEmitter
             rect = this.interactionDOMElement.getBoundingClientRect();
         }
 
-        const resolutionMultiplier = 1.0 / this.resolution;
+        const resolutionMultiplier = 1.0;
 
         point.x = ((x - rect.left) * ((this.interactionDOMElement as any).width / rect.width)) * resolutionMultiplier;
         point.y = ((y - rect.top) * ((this.interactionDOMElement as any).height / rect.height)) * resolutionMultiplier;
